@@ -1,12 +1,28 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Form Login</title>
+	<title></title>
 </head>
 <body>
-Login		:<input type="text" name="username">
-Password	:<input type="password" name="password">
-<input type="submit" name="login" value="Login">
-
+	<form method="post" action="proses.php" enctype="multipart/form-data">
+	Genre Film yang di sukai : <br>
+    	<label> <input type="checkbox" name="Film[]" value="Horror" /> Gambar <br></label>
+    	<label> <input type="checkbox" name="Film[]" value="Action" /> Menulis <br></label>
+    	<label> <input type="checkbox" name="Film[]" value="Anime" /> Membaca <br></label>
+    	<label> <input type="checkbox" name="Film[]" value="Thrille" /> Melukis <br></label>
+    	<label> <input type="checkbox" name="Film[]" value="Animasi" /> Animasi <br><br></label>
+    Tempat Wisata Tujuan Travelling : <br>
+    	<label> <input type="checkbox" name="Tempat[]" value="Bali" /> Bali <br></label>
+    	<label> <input type="checkbox" name="Tempat[]" value="Raja Ampat" /> Raja Ampat <br></label>
+    	<label> <input type="checkbox" name="Tempat[]" value="Pulau Derawan" /> Pulau Derawan <br></label>
+    	<label> <input type="checkbox" name="Tempat[]" value="Bangka Belitung" /> Bangka Belitung <br></label>
+    	<label> <input type="checkbox" name="Tempat[]" value="Labuan Bajo" /> Labuan Bajo <br><br></label>
+    Pilih Hobi : <br>
+    	<label> <input type="checkbox" name="Hobi[]" value="Gambar" /> Gambar <br></label>
+    	<label> <input type="checkbox" name="Hobi[]" value="Menulis" /> Menulis <br></label>
+    	<label> <input type="checkbox" name="Hobi[]" value="Membaca" /> Membaca <br></label>
+    	<label> <input type="checkbox" name="Hobi[]" value="Melukis" /> Melukis <br><br></label>
+    Upload Foto : <br><input type="file" name="dokumen"><br><br>
+		<label><input type="submit" name="Upload" value="Upload"></label>
 </body>
 </html>
