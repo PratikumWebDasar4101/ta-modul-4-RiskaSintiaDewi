@@ -1,14 +1,26 @@
-session_start();
-
-$user = array(
-	"username" => "admin",
-	"password" => 123
-);
-
-if ($user["username"] == $_POST["username"] && $user["password"] == $_POST["password"]) {
-	$_SESSION["username"] = $user["username"];
-	$_SESSION["user"] = $user;
-	header("Location: form_belanja.php");
-}else {
-	header("Location: login.php");
-}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form action="proses.php" method="post">
+		<table>
+			<tr>
+				<td>Username</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+			</tr>
+			<tr>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Kirim"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
