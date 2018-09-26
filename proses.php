@@ -3,7 +3,7 @@
 session_start();
 
 $user = array(
-	"username" => "admin",
+	"username" => "user",
 	"password" => 123
 );
 
