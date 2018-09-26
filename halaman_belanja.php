@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form method="post" action="struk_belanja.php" enctype="multipart/form-data">
+	<form method="post" action="proses_belanja.php" enctype="multipart/form-data">
 	<p>========= <b>DATA PEMBELI</b> =========</p><br>
 	Nama : <input type="text" name="nama"><br><br>
 	No.Telp : <input type="text" name="no" value="+62"><br><br>
